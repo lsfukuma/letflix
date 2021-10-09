@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/9cd5be54d3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <title>Letflix</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <img src="img/letflix.png" alt="letflix">
+                <h1></h1>
+            </div>
+            <div class="header-right">
+                <input class="input-search"type="text" placeholder="Buscar na Boolflix" >
+                <button class="btn-search"> Procurar </button>
+            </div>
+        </header>
+        <main class="container">
+
+
+        </main>
+        <script id="results-template" type="text/x-handlebars-template">
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="card-img">
+                        <img class="image-result" src="{{poster}}" alt="{{title}}">
+                    </div>
+                    <ul class="flip-card-back">
+                        <li>Título: {{title}}</li>
+                        <li>({{title-original}})</li>
+                        <li class="flag-country">Língua original: {{{original-language}}}</li>
+                        <li>Voto médio: {{{average-vote}}}</li>
+                        <li class="overview">Resumo: {{overview}}</li>
+                    </ul>
+                </div>
+            </div>
+        </script>
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
