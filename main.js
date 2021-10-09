@@ -31,7 +31,7 @@ function search() {
             'data': {
                 'api_key': apiKey ,
                 'query': search ,
-                'language': 'pt',
+                'language': 'it',
             },
             'success': function(movies){
                 apiAnswer(movies, 'movies')
